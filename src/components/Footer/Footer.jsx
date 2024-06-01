@@ -16,7 +16,6 @@ const quick__links = [
 ]
 
 const quick__links2 = [
-  
    {
       path: '/login',
       display: 'Login'
@@ -36,27 +35,27 @@ const Footer = () => {
             <Row>
                <Col lg='3'>
                   <div className="logo">
-                     <img src={logo} alt="" />
-                     <p>“ who would travel happily must travel light.”</p>
+                     <img src={logo} alt="Travelly Logo" />
+                     <p>“Who would travel happily must travel light.”</p>
                      <div className="social__link d-flex align-items-center gap-4">
                         <span>
                            <Link to='#'>
-                              <i class='ri-youtube-line'></i>
+                              <i className='ri-youtube-line'></i>
                            </Link>
                         </span>
                         <span>
                            <Link to='#'>
-                              <i class='ri-github-fill'></i>
+                              <i className='ri-github-fill'></i>
                            </Link>
                         </span>
                         <span>
                            <Link to='#'>
-                              <i class='ri-facebook-circle-line'></i>
+                              <i className='ri-facebook-circle-line'></i>
                            </Link>
                         </span>
                         <span>
                            <Link to='#'>
-                              <i class='ri-instagram-line'></i>
+                              <i className='ri-instagram-line'></i>
                            </Link>
                         </span>
                      </div>
@@ -95,7 +94,7 @@ const Footer = () => {
                   <ListGroup className='footer__quick-links'>
                      <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                         <h6 className='mb-0 d-flex align-items-center gap-2'>
-                           <span><i class='ri-map-pin-line'></i></span>
+                           <span><i className='ri-map-pin-line'></i></span>
                            Address:
                         </h6>
                         <p className='mb-0'>INDIA</p>
@@ -103,7 +102,7 @@ const Footer = () => {
 
                      <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                         <h6 className='mb-0 d-flex align-items-center gap-2'>
-                           <span><i class='ri-mail-line'></i></span>
+                           <span><i className='ri-mail-line'></i></span>
                            Email:
                         </h6>
 
@@ -112,13 +111,20 @@ const Footer = () => {
 
                      <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                         <h6 className='mb-0 d-flex align-items-center gap-2'>
-                           <span><i class='ri-phone-fill'></i></span>
+                           <span><i className='ri-phone-fill'></i></span>
                            Phone:
                         </h6>
 
                         <p className='mb-0'>9123456786</p>
                      </ListGroupItem>
                   </ListGroup>
+               </Col>
+            </Row>
+            <Row>
+               <Col lg='12' className='text-center mt-4'>
+                  <p className='footer__copyright'>
+                     &copy; {year} Travelly. All Rights Reserved.
+                  </p>
                </Col>
             </Row>
          </Container>
